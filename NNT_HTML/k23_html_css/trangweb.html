@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <style>
+         .body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      body{
+        width: 100%;
+        height: 100vh;
+        background-image: url("image/imagemauxam.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+      }
+      .txet-color{
+        color: aliceblue;
+      }
+
+    </style>
+</head>
+<body>
+    <header class="p-3 text-bg-dark">
+      <img src="image/logo.png" alt="Logo" height="32"> SHOP BÁN MÔ HÌNH
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 text-secondary">Trang Chủ</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+        
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-outline-warning me-2 text-white" onclick="openLoginModal()">Đăng Nhập</button>
+                    <button type="button" class="btn btn-warning me-2 text-white" onclick="openModal()">Đăng ký</button>
+
+                    </button>
+                </div>
+            </div>
+            <div class="px-4 py-5 my-5 text-center ">
+              <img class="d-block mx-auto mb-4 " src="image/logo.png" alt="" width="72" height="57">
+              <h1 class="display-5 fw-bold " style="color: rgb(253, 253, 253);">Shop Bán Mô Hình </h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Shop chuyên bán các loại mô hình chính hãng,giao hàng nhanh và đóng gói cẩn thận</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Giỏ Hàng</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Mua ngay</button>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card h-100 overflow-hidden text-dark rounded-4 shadow-lg">
+                        <img src="image/imagechibi.webp" class="card-img" alt="Image 1">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                            <h3 class="card-title fs-3 fw-bold text-white mb-3"></h3>
+                            <ul class="list-unstyled d-flex mb-0">
+                                <li class="me-3">
+                                    <img src="image/logo.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3 text-white">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center text-white">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="card h-100 overflow-hidden text-dark rounded-4 shadow-lg">
+                        <img src="image/imagezoro.jpg" class="card-img" alt="Image 2">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                            <h3 class="card-title fs-3 fw-bold text-white mb-3"></h3>
+                            <ul class="list-unstyled d-flex mb-0">
+                                <li class="me-3">
+                                    <img src="image/logo.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3 text-white">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center text-white">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="card h-100 overflow-hidden text-dark rounded-4 shadow-lg">
+                        <img src="image/imagerau.webp" class="card-img" alt="Image 3">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                            <h3 class="card-title fs-3 fw-bold text-white mb-3"></h3>
+                            <ul class="list-unstyled d-flex mb-0">
+                                <li class="me-3">
+                                    <img src="image/logo.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3 text-white">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                                    <small>California</small>
+                                </li>
+                                <li class="d-flex align-items-center text-white">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                                    <small>5d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </header>
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100">
+                  <img src="image/imagamohinh.jpg" class="card-img-top" alt="Product 1">
+                  <div class="card-body">
+                      <h4 class="card-title">Mô Hình zoro</h4>
+                      <p class="card-text">mô hình trưng bày,thiết kế chi tiết</p>
+                  </div>
+                  <div class="card-footer">
+                      <button class="btn btn-primary">Mua ngay</button>
+                      <img src="image/imagegiohang.jpg" alt="Giỏ hàng" height="50">
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100">
+                  <img src="image/imagezoro.jpg" class="card-img-top" alt="Product 2">
+                  <div class="card-body">
+                      <h4 class="card-title">Mô Hình Zoro</h4>
+                      <p class="card-text">Mô tả sản phẩm 2.</p>
+                  </div>
+                  <div class="card-footer">
+                      <button class="btn btn-primary">Mua ngay</button>
+                      <img src="image/imagegiohang.jpg" alt="Giỏ hàng" height="50">
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100">
+                  <img src="image/imagemohinh2.jpg" class="card-img-top" alt="Product 3">
+                  <div class="card-body">
+                      <h4 class="card-title">Mô Hình chibi
+                      </h4>
+                      <p class="card-text">Mô tả sản phẩm 3.</p>
+                  </div>
+                  <div class="card-footer">
+                      <button class="btn btn-primary">Mua ngay</button>
+                      <img src="image/imagegiohang.jpg" alt="Giỏ hàng" height="50">
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card h-100">
+                  <img src="image/imagemohinh3.webp" class="card-img-top" alt="Product 4">
+                  <div class="card-body">
+                      <h4 class="card-title">Mô Hình marco</h4>
+                      <p class="card-text">Mô tả sản phẩm 4.</p>
+                  </div>
+                  <div class="card-footer">
+                      <button class="btn btn-primary">Mua ngay</button>
+                      <img src="image/imagegiohang.jpg" alt="Giỏ hàng" height="50">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="fw-bold mb-0 fs-2">Đăng nhập</h1>
+                <button type="button" class="btn-close modal-close" onclick="closeLoginModal()"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="loginEmail" placeholder="name@example.com">
+                        <label for="loginEmail">Địa chỉ email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="loginPassword" placeholder="Mật khẩu">
+                        <label for="loginPassword">Mật khẩu</label>
+</div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Đăng nhập</button>
+</form>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="fw-bold mb-0 fs-2">Đăng ký miễn phí</h1>
+                <button type="button" class="btn-close modal-close" onclick="closeModal()"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">
+                            Địa chỉ email
+                        </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Mật khẩu">
+                        <label for="floatingPassword">
+                            Mật khẩu
+                        </label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">
+                        Đăng ký
+                    </button>
+                    <small class="text-body-secondary">
+                        Bằng việc nhấn Đăng ký, bạn đã đồng ý với các điều khoản sử dụng.
+                    </small>
+                    <hr class="my-4">
+                    <h2 class="fs-5 fw-bold mb-3">Hoặc sử dụng dịch vụ của bên thứ ba</h2>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                        Đăng ký bằng Twitter
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                        Đăng ký bằng Facebook
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                        Đăng ký bằng GitHub
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none"></a>
+            </div>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex "   >
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+    
+</body>
+<script>
+    function openLoginModal() {
+        var loginModal = document.getElementById('loginModal');
+        loginModal.style.display = 'block';
+    }
+
+    function openModal() {
+        var signupModal = document.getElementById('signupModal');
+        signupModal.style.display = 'block';
+    }
+
+    function closeLoginModal() {
+        var loginModal = document.getElementById('loginModal');
+        loginModal.style.display = 'none';
+    }
+function closeModal() {
+        var signupModal = document.getElementById('signupModal');
+        signupModal.style.display = 'none';
+    }
+</script>
+
+</html>
+<script src="bootstrap/bootstrap.bundle.min.js"></script>
